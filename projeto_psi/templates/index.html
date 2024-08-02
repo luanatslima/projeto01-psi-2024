@@ -1,29 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site do projeto_psi</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<header>
-    <nav>
-        <img src="img.png/logo1.png">
-        <a href="#">Início</a>
-        <a href="#">Jogadoras</a>
-        <a href="#">Sobre</a>
-    </nav>
-</header>
-<div>
-
-</div>
-<article>
-    <section></section>
-</article>
-<aside>
-
-</aside>
-<div></div>
-<footer></footer>
-</html>
-
+{% extends 'base.html' %}
+{% block title %}Sobre{% endblock %}
+{% block content %}
+    <h1>Página inicial<h1>
+    <p>
+    <img src="{% img 'seleção_foto.webp' %}" alt="Seleção">
+{% endblock %}

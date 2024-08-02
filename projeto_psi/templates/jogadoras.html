@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load estilo %}
+{% block title %}Jogadoras{% endblock %}
+{% block content %}
+
+<h1>Jogadoras<h1>
+
+    {% for jogadora in jogadoras %}
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ jogadora.nome }}</h5>
+          <div class="card-text">
+          Idade: {{ jogadora.idade }}
+          Local de nascimento: {{ jogadora.nascimento }}
+          Posição: {{ jogadora.posicao }}
+        </div>
+    </div>
+    {% endfor %}
+
+{% endblock %}

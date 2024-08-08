@@ -6,7 +6,7 @@ def index(request):
 def jogadoras(request):
     jogadoras = [
         {"nome": "Marta", "idade": "38", "posicao": "Atacante", "local de nascimento": "Dois Riachos - AL", "foto": "marta.png"},
-        {"nome": "Gabi Portilho", "idade": "29", "posicao": "Atacante", "local de nascimento": "Brasília - Distrito Federal", "foto": "gportilho.avif"},
+        {"nome": "Gabi Portilho", "idade": "29", "posicao": "Atacante", "local de nascimento": "Brasília - Distrito Federal", "foto": "gportilho.png"},
         {"nome": "Ludmila", "idade": "29", "posicao": "Atacante", "local de nascimento": "Guarulhos - SP", "foto": "ludmila.jpg"},
         {"nome": "Ana Vitória", "idade": "24", "posicao": "Meio-Campista", "local de nascimento": "Rondonópolis - Mato Grosso", "foto": "anavitoria.webp"},
         {"nome": "Yayá", "idade": "22", "posicao": "Meio-Campista", "local de nascimento": "Suzano - São Paulo", "foto": "yaya.webp"},

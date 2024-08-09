@@ -10,15 +10,22 @@
     <title>{% block title %}Site do projeto_psi{% endblock %}</title>
 </head>
 <body>
-    <div>
-        <a><img src= '{% 'static/logo1.png' %}' ></a>
-        <li><a href="{% url 'inicial' %}" >Início</a></li>
-        <li><a href="{% url 'jogadoras' %}" >Jogadoras</a></li>
-        <li><a href="{% url 'sobre' %}" >Sobre</a></li>
-    </div>
+    <header>
+        <img src="{% static 'logo.png' %}" >
+        <a href="{% url 'index' %}" >Início</a>
+        <a href="{% url 'jogadoras' %}" >Jogadoras</a>
+        <a href="{% url 'sobre' %}" >Sobre</a>
+    </header>
     <aside>
+        {% block content %}
         <h1>Seleção Feminina de Futebol</h1>
+        <a href="{% url 'pagina_inicial' %}" >Início</a>
+        {% endblock %}
     </aside>
+    <section>
+        <img src='{% static 'selecao.webp' %}' >
+    </section>
+
     <footer>
         <p>PSI - 2024</p>
     </footer>

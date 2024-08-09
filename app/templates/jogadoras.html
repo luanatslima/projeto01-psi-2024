@@ -2,17 +2,24 @@
 {% load static %}
 
 {% block title %}Jogadoras{% endblock %}
-
 {% block content %}
 
-<h1>Jogadoras</h1>
+<center><h1>Jogadoras</h1></center>
   {% for jogadora in jogadoras %}
-  <div>
-      Nome: {{ jogadora.nome }}<br>
-      Idade: {{ jogadora.idade }}<br>
-      Local de Nascimento: {{ jogadora.nascimento }}<br>
-      Posição: {{ jogadora.posicao }}<br>
+  <div class='container-fluid'>
+    <div class="card" style="width: 18rem;">
+      <img src="{% static jogadora.foto %}" class="card-img-top" alt="{{ jogadora.nome }}">
+      <div class="card-body">
+        <h5 class="card-title">
+          <p>Nome: {{ jogadora.nome }}</p><br>
+          <p>Idade: {{ jogadora.idade }}</p><br>
+          <p>Local de Nascimento: {{ jogadora.local_de_nascimento }}</p><br>
+          <p>Posição: {{ jogadora.posicao }}</p><br>
+        </h5>
+      </div>
+    </div>
   </div>
+  
   {% endfor %}
 
 {% endblock %}

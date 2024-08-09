@@ -5,21 +5,25 @@
 {% block content %}
 
 <center><h1>Jogadoras</h1></center>
-  {% for jogadora in jogadoras %}
-  <div class='container-fluid'>
-    <div class="card" style="width: 18rem;">
-      <img src="{% static jogadora.foto %}" class="card-img-top" alt="{{ jogadora.nome }}">
-      <div class="card-body">
-        <h5 class="card-title">
-          <p>Nome: {{ jogadora.nome }}</p><br>
-          <p>Idade: {{ jogadora.idade }}</p><br>
-          <p>Local de Nascimento: {{ jogadora.local_de_nascimento }}</p><br>
-          <p>Posição: {{ jogadora.posicao }}</p><br>
-        </h5>
+<div class="container">
+  <div class="row">
+    {% for jogadora in jogadoras %}
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static jogadora.foto %}" class="card-img-top" alt="{{ jogadora.nome }}">
+        <div class="card-body">
+          <h5 class="card-title">
+            <p>Nome: {{ jogadora.nome }}</p><br>
+            <p>Idade: {{ jogadora.idade }}</p><br>
+            <p>Local de Nascimento: {{ jogadora.local_de_nascimento }}</p><br>
+            <p>Posição: {{ jogadora.posicao }}</p><br>
+          </h5>
+        </div>
       </div>
     </div>
+    {% endfor %}
   </div>
-  
-  {% endfor %}
+</div>
 
 {% endblock %}
+

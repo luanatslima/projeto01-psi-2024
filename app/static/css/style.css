@@ -42,3 +42,7 @@ div p{
     display: grid;
     display: inline-block;
 }
+
+.card {
+    margin-bottom: 50px;
+}

@@ -1,32 +1,39 @@
 header img{
-    width: 7%;
+    width: 9%;
 }
 
 header a{
     font-family: Impact;
     color: white;
     margin: 150px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 header{
     background-color: #3232fa;
 }
 
-section img{
-    width: 30%;
+img{
+    width: 47%;
     padding: 1%;
+    border-radius: 25px;
 }
 
 p{
     padding: 1%;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    display: inline-block;
+ 
+    margin-block-end: 2em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
 }
 
 h1{
     font-family: Impact;
     width: 30%;
-    padding: 1%;
+    padding: 2%;
     color: rgb(167, 167, 72);
 }
 
@@ -36,4 +43,3 @@ div p{
     display: grid;
     display: inline-block;
 }
-

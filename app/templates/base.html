@@ -10,25 +10,26 @@
     <title>{% block title %}Site do projeto_psi{% endblock %}</title>
 </head>
 <body>
-    <header>
-        <img src="{% static 'logo.png' %}" >
-        <a href="{% url 'index' %}" >Início</a>
-        <a href="{% url 'jogadoras' %}" >Jogadoras</a>
-        <a href="{% url 'sobre' %}" >Sobre</a>
-    </header>
-    <aside>
-        {% block content %}
-        <h1>Seleção Feminina de Futebol</h1>
-        <a href="{% url 'pagina_inicial' %}" >Início</a>
-        {% endblock %}
-    </aside>
-    <section>
-        <img src='{% static 'selecao.webp' %}' >
-    </section>
 
-    <footer>
-        <p>PSI - 2024</p>
-    </footer>
+        <header>
+            <img src="{% static 'logo.png' %}" >
+            <a href="{% url 'index' %}" >Início</a>
+            <a href="{% url 'jogadoras' %}" >Jogadoras</a>
+            <a href="{% url 'sobre' %}" >Sobre</a>
+        </header>
+        <aside>
+            {% block content %}
+            <h1>Seleção Feminina de Futebol</h1>
+            <a href="{% url 'pagina_inicial' %}" >Início</a>
+            {% endblock %}
+        </aside>
+        <section>
+            <img src='{% static 'selecao.webp' %}'> 
+            <img src='{% static 'selecao_.png' %}'>
+        </section>
+        <footer>
+            <h5>PSI - 2024</h5>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

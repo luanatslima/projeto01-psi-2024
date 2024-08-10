@@ -16,7 +16,8 @@ header{
 img{
     width: 47%;
     padding: 1%;
-    border-radius: 25px;
+    margin: 0.5%;
+    border-radius: 30px;
 }
 
 p{
@@ -36,6 +37,13 @@ h1{
     color: rgb(167, 167, 72);
 }
 
+h5{
+    width: 30%;
+    padding: 2%;
+    font-family: Impact;
+    color: black;
+}
+
 div p{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -45,4 +53,10 @@ div p{
 
 .card {
     margin-bottom: 50px;
+    display: flex;
+    height: 100%;
+}
+
+.card-title p {
+    margin-bottom: 1rem;
 }
